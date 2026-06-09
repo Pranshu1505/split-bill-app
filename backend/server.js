@@ -15,7 +15,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://gleeful-genie-e48191.netlify.app"
+    "https://gleeful-genie-e48191.netlify.app",
+    "split-bill-app-pranshu.netlify.app"
   ],
   credentials: true
 }));
