@@ -10,8 +10,15 @@ const settlementRoutes = require('./src/routes/settlements');
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:5173',"https://gleeful-genie-e48191.netlify.app"
-  , credentials: true }));
+// app.use(cors({ origin: 'http://localhost:5173',"https://gleeful-genie-e48191.netlify.app"
+//   , credentials: true }));
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://gleeful-genie-e48191.netlify.app"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
