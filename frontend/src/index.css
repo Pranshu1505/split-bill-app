@@ -1,0 +1,54 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --primary: #6c63ff; --primary-dark: #5a52d5;
+  --bg: #f7f8fc; --surface: #ffffff; --border: #e8eaf0;
+  --text: #1a1a2e; --text-muted: #6b7280;
+  --danger: #ef4444; --success: #10b981; --warning: #f59e0b;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+}
+body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 500; border: none; cursor: pointer; transition: all 0.15s; text-decoration: none; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn-outline:hover { background: var(--bg); }
+.btn-danger { background: var(--danger); color: white; }
+.btn-sm { padding: 6px 12px; font-size: 13px; }
+.btn-full { width: 100%; justify-content: center; }
+.form-group { margin-bottom: 1rem; }
+.form-label { display: block; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 4px; }
+.form-input { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; color: var(--text); background: var(--surface); transition: border-color 0.15s; outline: none; }
+.form-input:focus { border-color: var(--primary); }
+.badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+.badge-green { background: #d1fae5; color: #065f46; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.badge-gray { background: #f3f4f6; color: #374151; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+.navbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 1rem; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow); }
+.navbar-brand { font-size: 18px; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.navbar-actions { display: flex; align-items: center; gap: 8px; }
+.page { padding: 2rem 0; }
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+.page-title { font-size: 22px; font-weight: 700; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.empty-state { text-align: center; padding: 3rem 1rem; color: var(--text-muted); }
+.empty-state .icon { font-size: 48px; margin-bottom: 1rem; }
+.empty-state h3 { font-size: 18px; margin-bottom: 0.5rem; color: var(--text); }
+.spinner { width: 24px; height: 24px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-page { display: flex; justify-content: center; align-items: center; min-height: 60vh; }
+.divider { height: 1px; background: var(--border); margin: 1rem 0; }
+.expense-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.expense-item:last-child { border-bottom: none; }
+.expense-info { flex: 1; }
+.expense-title { font-size: 15px; font-weight: 500; }
+.expense-meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.expense-amount { font-size: 16px; font-weight: 600; text-align: right; }
+.cat-food { background: #fef3c7; } .cat-travel { background: #dbeafe; } .cat-shopping { background: #fce7f3; }
+.cat-entertainment { background: #ede9fe; } .cat-utilities { background: #d1fae5; } .cat-other { background: #f3f4f6; }
+.settle-item { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: var(--bg); border-radius: 8px; margin-bottom: 8px; font-size: 14px; }
