@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'https://rad-torrone-225b15.netlify.app/login/api' });
+const api = axios.create({ baseURL: ' https://split-bill-app-yloh.onrender.com/api' });
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
