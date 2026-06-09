@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { AuthProvider, useAuth } from './context/Authcontext';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
-import GroupDetail from './pages/GroupDetail';
+import GroupDetail from './pages/Groupdetail';
 
 function PrivateRoute({ children }) {
   const { user, loading } = useAuth();

@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/Authcontext';
 
 const avatarColors = ['#6c63ff','#10b981','#f59e0b','#ef4444','#3b82f6'];
 

@@ -333,7 +333,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import toast from 'react-hot-toast';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/Authcontext';
 
 const CAT_EMOJI = { food: '🍕', travel: '✈️', shopping: '🛍️', entertainment: '🎬', utilities: '💡', other: '💰' };
 const CAT_COLORS = { food: 'cat-food', travel: 'cat-travel', shopping: 'cat-shopping', entertainment: 'cat-entertainment', utilities: 'cat-utilities', other: 'cat-other' };
